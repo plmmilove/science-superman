@@ -1,10 +1,10 @@
 ---
 layout: gongshi
-title: 高中数学公式
+title: 数列
 ---
 {% for s in site.data.shulie %}
     <h3>{{s.title}}</h3>
     {% for v in s.gongshi %}
-        `{{v}}`
+        `{{v}}`<br/>
     {% endfor %}
 {% endfor %}

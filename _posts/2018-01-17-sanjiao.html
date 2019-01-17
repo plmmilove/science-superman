@@ -1,0 +1,10 @@
+---
+layout: gongshi
+title: 三角函数
+---
+{% for s in site.data.sanjiao %}
+    <h3>{{s.title}}</h3>
+    {% for v in s.gongshi %}
+        `{{v}}`<br/>
+    {% endfor %}
+{% endfor %}

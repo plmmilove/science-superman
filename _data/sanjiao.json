@@ -1,0 +1,40 @@
+[
+  {
+    "title": "基本公式",
+    "gongshi": [
+      "cscalpha = 1 / sinalpha",
+      "secalpha = 1 / cosalpha",
+      "cotalpha = cosalpha / sinalpha = 1 / tanalpha",
+      "tanalpha = sinalpha / cosalpha",
+      "cotalpha = cosalpha / sinalpha",
+      "sin^2alpha + cos^2alpha = 1",
+      "tan^2alpha + 1 = sec^2alpha",
+      "cot^2alpha + 1 = csc^2alpha"
+    ]
+  },
+  {
+    "title":"和差(角)公式",
+    "gongshi":[
+      "sin(alpha + beta) =  sinalphacosbeta + cosalphasinbeta",
+      "sin(alpha - beta) =  sinalphacosbeta - cosalphasinbeta",
+      "cos(alpha + beta) =  cosalphacosbeta - sinalphasinbeta",
+      "cos(alpha - beta) =  cosalphacosbeta + sinalphasinbeta",
+      "tan(alpha + beta) =  (tanalpha + tanbeta)/(1 - tanalphatanbeta) ",
+      "tan(alpha - beta) =  (tanalpha - tanbeta)/(1 + tanalphatanbeta) "
+    ]
+  },
+  {
+    "title":"倍角公式",
+    "gongshi":[
+      "sin2alpha = 2sinalphacosalpha",
+      "cos2alpha = cos^2alpha - sin^2alpha = 2cos^2alpha - 1 = 1 - 2sin^2alpha",
+      "tan2alpha = (2tanalpha)/(1-tan^2alpha)"
+    ]
+  },
+  {
+    "title":"半角公式",
+    "gongshi":[
+
+    ]
+  }
+]
