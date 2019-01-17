@@ -5,6 +5,6 @@ title: 数列
 {% for s in site.data.shulie %}
     <h3>{{s.title}}</h3>
     {% for v in s.gongshi %}
-        `{{v}}`<br/>
+        {% include gs.html v=v %}
     {% endfor %}
 {% endfor %}

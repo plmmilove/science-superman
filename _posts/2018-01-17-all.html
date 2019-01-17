@@ -1,42 +1,12 @@
 ---
-layout: default
+layout: gongshi
 title: 全部公式
 ---
-<h3>等差数列</h3>
-`S_n = na_1 + (n(n-1))/2d = (n(a_1 + a_n))/2`
-<h3>等比数列</h3>
-`S_n = {((a_1(1 - q^n))/(1 - q) = ((a_1 - a_nq))/(1 - q), q != 1),(na_1, q = 1):}`
-<h3>自然数平方和</h3>
-`1^2 + 2^2 + 3^2 + cdots + n^2 = (2n + 1) / 3(1 + 2 + 3 + cdots + n) = (n(n + 1)(2n + 1))/6`
-<h3>自然数立方和</h3>
-`1^3 + 2^3 + 3^3 + cdots + n^3 = (1 + 2 + 3 + cdots + n) ^ 2 = [(n(n + 1)) / 2]^2`<br/>
-
-<h2>三角函数</h2>
-<h3>基本公式</h3>
-`cscalpha = 1 / sinalpha`<br/>
-`secalpha = 1 / cosalpha`<br/>
-`cotalpha = cosalpha / sinalpha = 1 / tanalpha`<br/>
-`tanalpha = sinalpha / cosalpha`<br/>
-`cotalpha = cosalpha / sinalpha`<br/>
-`sin^2alpha + cos^2alpha = 1`<br/>
-`tan^2alpha + 1 = sec^2alpha`<br/>
-`cot^2alpha + 1 = csc^2alpha`<br/>
-<h3>和差公式</h3>
-`sin(alpha + beta) =  sinalphacosbeta + cosalphasinbeta`<br/>
-`sin(alpha - beta) =  sinalphacosbeta - cosalphasinbeta`<br/>
-`cos(alpha + beta) =  cosalphacosbeta - sinalphasinbeta`<br/>
-`cos(alpha - beta) =  cosalphacosbeta + sinalphasinbeta`<br/>
-`tan(alpha + beta) =  (tanalpha + tanbeta)/(1 - tanalphatanbeta) `<br/>
-`tan(alpha - beta) =  (tanalpha - tanbeta)/(1 + tanalphatanbeta) `<br/>
-<h3>倍角公式</h3>
-`sin2alpha = 2sinalphacosalpha`<br/>
-`cos2alpha = cos^2alpha - sin^2alpha = 2cos^2alpha - 1 = 1 - 2sin^2alpha`<br/>
-`tan2alpha = (2tanalpha)/(1-tan^2alpha)`<br/>
-
-<script type="text/javascript" async
-        src="https://cdn.staticfile.org/mathjax/2.7.5/MathJax.js?config=AM_CHTML"></script>
-<script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-          CommonHTML: { linebreaks: { automatic: true } }
-        });
-    </script>
+{% for d in site.data %}
+    {% for s in site.data[d] %}
+        <h3>{{s.title}}</h3>
+        {% for v in s.gongshi %}
+            {% include gs.html v=v %}
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
