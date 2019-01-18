@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>高中数学公式</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/help.min.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/highlight.css">
+</head>
+
+<body>
+<div id="container" class="help page help-home background">
+    {% include header.html %}
+    <div class="panel main" style="top:3em">
+        <div class="panel left">
+            <div class="navigation wizard" role="navigation">
+                <ul>
+                    <li><h2>高中数学公式</h2></li>
+                    <li>
+                        <a href="https://help.passbolt.com/discover">数列</a>
+                    </li>
+
+                    <li>
+                        <a href="https://help.passbolt.com/start">三角函数</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel middle">
+         {{content}}
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="></script>
+<script src="{{ site.url }}/assets/js/greedynav.js"></script>
+{% if page.skipMathJax == true %}
+<script type="text/javascript" async
+        src="https://cdn.staticfile.org/mathjax/2.7.5/MathJax.js?config=AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          CommonHTML: { linebreaks: { automatic: true } }
+        });
+    </script>
+{% endif %}
+</body>
+</html>
