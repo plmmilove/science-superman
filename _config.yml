@@ -1,2 +1,3 @@
 url: "https://plmmilove.github.io/science-superman"
 paginate: 20
+include: ['_pages']
