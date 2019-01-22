@@ -2,11 +2,9 @@
 layout: main
 title: 数列
 ---
-<div class="grid grid-responsive-12">
 {% for s in site.data.shulie %}
     <h3>{{s.title}}</h3>
     {% for v in s.gongshi %}
         {% include gs.html v=v %}
     {% endfor %}
 {% endfor %}
-</div>

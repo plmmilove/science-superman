@@ -2,11 +2,9 @@
 layout: main
 title: 三角函数
 ---
-<div class="grid grid-responsive-12">
 {% for s in site.data.sanjiao %}
     <h3>{{s.title}}</h3>
     {% for v in s.gongshi %}
         {% include gs.html v=v %}
     {% endfor %}
 {% endfor %}
-</div>
