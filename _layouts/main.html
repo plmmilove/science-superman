@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>高中数学公式</title>
-
+    <title>Passbolt Help | Passbolt | Help</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
 
     <link rel="stylesheet" href="{{ site.url }}/assets/css/help.min.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/highlight.css">
@@ -15,23 +13,60 @@
 <body>
 <div id="container" class="help page help-home background">
     {% include header.html %}
-    <div class="panel main" style="top:3em">
+    <div class="panel main">
         <div class="panel left">
             <div class="navigation wizard" role="navigation">
                 <ul>
-                    <li><h2>高中数学公式</h2></li>
                     <li>
-                        <a href="https://help.passbolt.com/discover">数列</a>
+                        <a href="https://help.passbolt.com/discover">Discover</a>
                     </li>
 
                     <li>
-                        <a href="https://help.passbolt.com/start">三角函数</a>
+                        <a href="https://help.passbolt.com/start">Get started</a>
+                    </li>
+
+                    <li>
+                        <a href="https://help.passbolt.com/hosting">Hosting</a>
+                    </li>
+
+                    <li>
+                        <a href="https://help.passbolt.com/configure">Configure</a>
+                    </li>
+
+                    <li>
+                        <a href="https://help.passbolt.com/contribute">Contribute</a>
+                    </li>
+
+                    <li>
+                        <a href="https://help.passbolt.com/legal">Small print</a>
                     </li>
                 </ul>
             </div>
         </div>
+
         <div class="panel middle">
-         {{content}}
+            <div class="grid grid-responsive-12">
+                <div class="row" id="introduction">
+                    <div class="col12">
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li>
+                                    <div class="main-cell">
+                                        <a href="https://www.passbolt.com"><span>home</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main-cell">
+                                        <a href="#"><span>help</span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                {{content}}
+            </div>
         </div>
     </div>
 </div>
@@ -45,6 +80,6 @@
         MathJax.Hub.Config({
           CommonHTML: { linebreaks: { automatic: true } }
         });
-    </script>
+</script>
 </body>
 </html>
